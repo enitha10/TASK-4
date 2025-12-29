@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Social Media Chat UI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #e5ddd5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Chat Container */
+        .chat-container {
+            width: 360px;
+            height: 600px;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        /* Header */
+        .chat-header {
+            background: #075e54;
+            color: #fff;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .chat-header img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .chat-header h3 {
+            font-size: 18px;
+        }
+
+        /* Chat Body */
+        .chat-body {
+            flex: 1;
+            padding: 15px;
+            background: #efeae2;
+            overflow-y: auto;
+        }
+
+        .message {
+            max-width: 70%;
+            padding: 10px 14px;
+            margin-bottom: 10px;
+            border-radius: 15px;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .left {
+            background: #fff;
+            align-self: flex-start;
+            border-bottom-left-radius: 0;
+        }
+
+        .right {
+            background: #dcf8c6;
+            align-self: flex-end;
+            border-bottom-right-radius: 0;
+        }
+
+        /* Chat Footer */
+        .chat-footer {
+            display: flex;
+            padding: 10px;
+            background: #f0f0f0;
+        }
+
+        .chat-footer input {
+            flex: 1;
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            font-size: 14px;
+        }
+
+        .chat-footer button {
+            background: #075e54;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            margin-left: 8px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="chat-container">
+
+    <!-- Header -->
+    <div class="chat-header">
+        <img src="https://i.pravatar.cc/100" alt="Profile">
+        <h3>Alex</h3>
+    </div>
+
+    <!-- Chat Messages -->
+    <div class="chat-body">
+        <div class="message left">Hi 👋 How are you?</div>
+        <div class="message right">I'm good! What about you?</div>
+        <div class="message left">Doing great 😄</div>
+        <div class="message right">Nice to hear that!</div>
+    </div>
+
+    <!-- Input -->
+    <div class="chat-footer">
+        <input type="text" placeholder="Type a message...">
+        <button>➤</button>
+    </div>
+
+</div>
+
+</body>
+</html>
